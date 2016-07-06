@@ -9,16 +9,3 @@ python:
 
 # command to install dependencies
 install: "pip install -r requirements.txt"
-
-# env variables
-#env:
-#  global:
-#    - imgur_id="foo"
-#    - imgur_secret="bar"
-#    - redis_url="localhost"
-
-# start any services required
-#services: redis
-#
-#script:
-#  - python hipchat.py & ./test.sh
