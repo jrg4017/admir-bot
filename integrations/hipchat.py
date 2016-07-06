@@ -25,5 +25,5 @@ class HipChat:
     def command_message(self, value):
         self.command_message = value
 
-    def __init__(self):
+    # def __init__(self):
 

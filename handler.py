@@ -1,6 +1,5 @@
 from bottle import Bottle, run, request, response
 
-
 class Handler:
     @property
     def request_json(self):
@@ -14,7 +13,7 @@ class Handler:
     def __init__(self):
         self.request_json = request.json
 
-        if
+        # if
 
         self.command_message = self.request_json[u'item'][u'message'][u'message']
         self.room_id = self.request_json[u'item'][u'room'][u'name']
@@ -31,6 +30,5 @@ class Handler:
         parsed = " ".join(parsed)
 
 
-@app.route('/', method='POST')
-def handle():
-
+# @app.route('/', method='POST')
+# def handle():
