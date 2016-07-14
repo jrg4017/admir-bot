@@ -1,26 +1,41 @@
+from abc import ABCMeta, abstractmethod
 
 
 class Integration:
-    @property
+    __metaclass__ = ABCMeta
+
+    @abstractmethod
     def room_id(self):
-        return self.room_id
+        raise NotImplementedError
+        return
 
-    @room_id.setter
+    @abstractmethod
     def room_id(self, value):
-        self.room_id = value
+        pass
 
-    @property
+    @abstractmethod
     def user(self):
-        return self.user
+        raise NotImplementedError
+        return
 
-    @user.setter
+    @abstractmethod
     def user(self, value):
-        self.user = value
+        pass
 
-    @property
+    @abstractmethod
+    def command(self):
+        raise NotImplementedError
+        return
+
+    @abstractmethod
+    def command(self, value):
+        pass
+
+    @abstractmethod
     def command_message(self):
-        return self.command_message
+        raise NotImplementedError
+        return
 
-    @command_message.setter
+    @abstractmethod
     def command_message(self, value):
-        self.command_message = value
+        pass
